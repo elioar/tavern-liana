@@ -44,11 +44,11 @@
 
 :root{
 	--primary-color		    : #FFFFFF;
-	--secondary-color		: #1F2120;
+	--secondary-color		: #08172E;
 	--text-color			: #AEB0B4;
-	--accent-color			: #CE9B35;
-	--divider-color			: #FFFFFF1A;
-	--dark-divider-color	: #0E110D;
+	--accent-color			: #2F80ED;
+	--divider-color			: #2C3442;
+	--dark-divider-color	: #08172E;
 	--error-color			: rgb(230, 87, 87);
 	--default-font			: "Hanken Grotesk", serif;
 }
@@ -5992,7 +5992,7 @@ header.main-header .header-sticky.active{
 }
 
 .menu-list a.active {
-	background-color: var(--accent-color);
+	background-color: var(--primary-color);
 	color: var(--secondary-color);
 	font-weight: 700;
 	box-shadow: 0 2px 12px rgba(166, 161, 130, 0.3);

@@ -708,7 +708,7 @@ header.main-header .header-sticky.active{
 
 .hero{
 	position: relative;
-	background: url('../images/hero-bg.webp');
+	background: url('../images/hero-bg.png');
 	background-repeat: no-repeat;
 	background-position: center center;
 	background-size: cover;
@@ -2400,6 +2400,7 @@ header.main-header .header-sticky.active{
 
 .footer-logo{
 	margin-bottom: 20px;
+	margin-top: 60px;
 }
 
 .footer-logo img{

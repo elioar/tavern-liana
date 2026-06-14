@@ -55,61 +55,132 @@
 	<!-- Preloader End -->
 
     <!-- Header Start -->
-	<header class="main-header">
-		<div class="header-sticky">
-			<nav class="navbar navbar-expand-lg">
-				<div class="container">
-					<!-- Logo Start -->
-					<a class="navbar-brand" href="index.html">
-						<img src="images/logo.svg" alt="Logo">
-					</a>
-					<!-- Logo End -->
+    <header class="main-header">
+        <div class="header-sticky">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <!-- Logo Start -->
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/Toli_logo.webp" alt="Liana Tavern logo" height="75">
+                    </a>
+                    <!-- Logo End -->
 
-					<!-- Main Menu Start -->
-					<div class="collapse navbar-collapse main-menu">
+                    <!-- Main Menu Start -->
+                    <div class="collapse navbar-collapse main-menu">
                         <div class="nav-menu-wrapper">
                             <ul class="navbar-nav mr-auto" id="menu">
-                                <li class="nav-item submenu"><a class="nav-link" href="index.html">Home</a>
-                                    <ul>
-                                        <li class="nav-item"><a class="nav-link" href="index-2.html">Home - Image</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-video.html">Home - Video</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="index-slider.html">Home - Slider</a></li>
-                                    </ul>
-                                </li>                                
-                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a>
-                                    <li class="nav-item"><a class="nav-link" href="services.html">Services</a></li>
-                                <li class="nav-item"><a class="nav-link" href="menu.html">menu</a></li>
-                                <li class="nav-item submenu"><a class="nav-link" href="#">Pages</a>
-                                    <ul>                                        
-                                        <li class="nav-item"><a class="nav-link" href="service-single.html">Services Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="blog-single.html">Blog Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="chefs.html">Our Chefs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="chef-single.html">Chef Details</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="testimonial.html">Testimonials</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="image-gallery.html">Image Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="video-gallery.html">Video Gallery</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="faqs.html">FAQs</a></li>
-                                        <li class="nav-item"><a class="nav-link" href="404.html">404</a></li>
-                                    </ul>
+                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a>
                                 </li>
-                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>                           
+                                <li class="nav-item"><a class="nav-link" href="menu.html">menu</a></li>
+                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
                             </ul>
                         </div>
                         <!-- Header Contact Box Start -->
                         <div class="header-btn">
-                            <a href="contact.html" class="btn-default">book a table</a>
+                            <a href="menu.html" class="btn-default">See the Menu</a>
+                        </div>
+                        <div class="language-switcher" aria-label="Language switcher">
+                            <button type="button" class="lang-btn lang-btn-flag active" data-lang="en"
+                                aria-label="English">
+                                <svg class="flag-icon" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
+                                    <rect width="60" height="30" fill="#012169"></rect>
+                                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path>
+                                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3.5"></path>
+                                    <rect x="24" width="12" height="30" fill="#fff"></rect>
+                                    <rect y="9" width="60" height="12" fill="#fff"></rect>
+                                    <rect x="26" width="8" height="30" fill="#C8102E"></rect>
+                                    <rect y="11" width="60" height="8" fill="#C8102E"></rect>
+                                </svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="de" aria-label="German">
+                                <svg class="flag-icon" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
+                                    <rect width="5" height="1" y="0" fill="#000000"></rect>
+                                    <rect width="5" height="1" y="1" fill="#DD0000"></rect>
+                                    <rect width="5" height="1" y="2" fill="#FFCE00"></rect>
+                                </svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ru" aria-label="Russian">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
+                                    <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
+                                    <rect width="3" height="0.6667" y="0.6667" fill="#0039A6"></rect>
+                                    <rect width="3" height="0.6667" y="1.3333" fill="#D52B1E"></rect>
+                                </svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="bg" aria-label="Bulgarian">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
+                                    <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
+                                    <rect width="3" height="0.6667" y="0.6667" fill="#00966E"></rect>
+                                    <rect width="3" height="0.6667" y="1.3333" fill="#D62612"></rect>
+                                </svg>
+                            </button>
+                            
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="sr" aria-label="Serbian">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                                    <rect width="3" height="0.6667" y="0" fill="#C6363C"></rect>
+                                    <rect width="3" height="0.6667" y="0.6667" fill="#0C4076"></rect>
+                                    <rect width="3" height="0.6667" y="1.3333" fill="#FFFFFF"></rect>
+                                </svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ro" aria-label="Romanian">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                                    <rect width="1" height="2" x="0" fill="#002B7F"></rect>
+                                    <rect width="1" height="2" x="1" fill="#FCD116"></rect>
+                                    <rect width="1" height="2" x="2" fill="#CE1126"></rect>
+                                </svg>
+                            </button>
+<button type="button" class="lang-btn lang-btn-flag" data-lang="el" aria-label="Greek">
+                                <svg class="flag-icon" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
+                                    <rect width="27" height="18" fill="#0D5EAF"></rect>
+                                    <rect y="2" width="27" height="2" fill="#fff"></rect>
+                                    <rect y="6" width="27" height="2" fill="#fff"></rect>
+                                    <rect y="10" width="27" height="2" fill="#fff"></rect>
+                                    <rect y="14" width="27" height="2" fill="#fff"></rect>
+                                    <rect width="10" height="10" fill="#0D5EAF"></rect>
+                                    <rect x="4" width="2" height="10" fill="#fff"></rect>
+                                    <rect y="4" width="10" height="2" fill="#fff"></rect>
+                                </svg>
+                            </button>
                         </div>
                         <!-- Header Contact Box End -->
-					</div>
-					<!-- Main Menu End -->
-					<div class="navbar-toggle"></div>
-				</div>
-			</nav>
-			<div class="responsive-menu"></div>
-		</div>
-	</header>
-	<!-- Header End -->
+                    </div>
+                    <!-- Main Menu End -->
+                    <div class="mobile-language-switcher" aria-label="Mobile language switcher">
+                        <button type="button" class="lang-mobile-trigger" aria-label="Select language" aria-expanded="false">
+                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
+                            <span class="lang-mobile-trigger__code">EN</span>
+                        </button>
+                        <div class="lang-mobile-panel" aria-label="Select language">
+                            <button type="button" class="lang-btn lang-btn-flag active" data-lang="en" aria-label="English">
+                                <svg class="flag-icon" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="60" height="30" fill="#012169"></rect><path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path><path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3.5"></path><rect x="24" width="12" height="30" fill="#fff"></rect><rect y="9" width="60" height="12" fill="#fff"></rect><rect x="26" width="8" height="30" fill="#C8102E"></rect><rect y="11" width="60" height="8" fill="#C8102E"></rect></svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="de" aria-label="German">
+                                <svg class="flag-icon" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="5" height="1" y="0" fill="#000000"></rect><rect width="5" height="1" y="1" fill="#DD0000"></rect><rect width="5" height="1" y="2" fill="#FFCE00"></rect></svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ru" aria-label="Russian">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect><rect width="3" height="0.6667" y="0.6667" fill="#0039A6"></rect><rect width="3" height="0.6667" y="1.3333" fill="#D52B1E"></rect></svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="bg" aria-label="Bulgarian">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect><rect width="3" height="0.6667" y="0.6667" fill="#00966E"></rect><rect width="3" height="0.6667" y="1.3333" fill="#D62612"></rect></svg>
+                            </button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="sr" aria-label="Serbian"><svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="3" height="0.6667" y="0" fill="#C6363C"></rect><rect width="3" height="0.6667" y="0.6667" fill="#0C4076"></rect><rect width="3" height="0.6667" y="1.3333" fill="#FFFFFF"></rect></svg></button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ro" aria-label="Romanian"><svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="1" height="2" x="0" fill="#002B7F"></rect><rect width="1" height="2" x="1" fill="#FCD116"></rect><rect width="1" height="2" x="2" fill="#CE1126"></rect></svg></button>
+                            <button type="button" class="lang-btn lang-btn-flag" data-lang="el" aria-label="Greek">
+                                <svg class="flag-icon" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false"><rect width="27" height="18" fill="#0D5EAF"></rect><rect y="2" width="27" height="2" fill="#fff"></rect><rect y="6" width="27" height="2" fill="#fff"></rect><rect y="10" width="27" height="2" fill="#fff"></rect><rect y="14" width="27" height="2" fill="#fff"></rect><rect width="10" height="10" fill="#0D5EAF"></rect><rect x="4" width="2" height="10" fill="#fff"></rect><rect y="4" width="10" height="2" fill="#fff"></rect></svg>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="navbar-toggle"></div>
+                </div>
+            </nav>
+            <div class="responsive-menu"></div>
+        </div>
+    </header>
+    <!-- Header End -->
 
     <!-- Page Header Start -->
 	<div class="page-header parallaxie">
@@ -157,7 +228,7 @@
     <!-- error section end -->
 
     <!-- Reserve Table Section Start -->
-    <div class="reserve-table">
+    <div class="reserve-table" id="reservation">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -165,19 +236,18 @@
                     <div class="reserve-table-content">
                         <!-- Section Title Start -->
                         <div class="section-title">
-                            <h3 class="wow fadeInUp">reserve a table</h3>
-                            <h2 class="text-anime-style-2" data-cursor="-opaque">reserve now your table and <span>enjoy dining experience.</span></h2>
+                            <h3 class="wow fadeInUp">book a table</h3>
+                            <h2 class="text-anime-style-2" data-cursor="-opaque" data-i18n-html="reservation_heading" data-i18n-html-default="Book your table and <span>enjoy Greek hospitality.</span>">Book your table and <span>enjoy Greek hospitality.</span></h2>
                         </div>
                         <!-- Section Title End -->
 
                         <!-- Reserve Table Body Start -->
                         <div class="reserve-table-body wow fadeInUp" data-wow-delay="0.2s">
-                            <h3>open hours</h3>
+                            <h3>opening hours</h3>
                             <ul>
-                                <li>Mon - Thu <span>10:00 AM - 09:00 PM</span></li>
-                                <li>Fri - Sat <span>09:00 AM - 10:00 PM</span></li>
-                                <li>Sun <span>Closed</span></li>
+                                <li><span class="reserve-table-day">Daily</span><span class="reserve-table-time">11:00 AM - 12:00 AM</span></li>
                             </ul>
+                            <p>Open every day in Metamorfosi for lunch and dinner. Reservations are recommended during the summer season.</p>
                         </div>
                         <!-- Reserve Table Body End -->
                     </div>
@@ -187,63 +257,69 @@
                 <div class="col-lg-6">
                     <!-- Reserve Table Form Start -->
                     <div class="reserve-table-form">
-                        <form id="appointmentForm" action="#" method="POST" data-toggle="validator" class="wow fadeInUp">
+                        <div data-fs-success class="reserve-form-success">Your reservation request has been sent! We will contact you soon to confirm.</div>
+                        <div data-fs-error class="reserve-form-error"></div>
+                        <form id="appointmentForm" action="https://formspree.io/f/xzdoedzd" method="POST" class="wow fadeInUp">
+                            <input type="hidden" name="_subject" value="Νέα Κράτηση – Liana Tavern">
                             <div class="row">
                                 <div class="form-group col-md-12 mb-4">
-                                    <label class="form-label">your name</label>
-                                    <input type="text" name="name" class="form-control" id="name" placeholder="e.g. John" required>
-                                    <div class="help-block with-errors"></div>
+                                    <label class="form-label">full name</label>
+                                    <input type="text" name="Ονομα" class="form-control" id="name"
+                                        placeholder="e.g. John" required data-fs-field>
+                                    <span data-fs-error="Ονομα" class="help-block with-errors"></span>
                                 </div>
 
                                 <div class="form-group col-md-6 mb-4">
-                                    <label class="form-label">email address</label>
-                                    <input type="email" name ="email" class="form-control" id="email" placeholder="e.g. John@example.com" required>
-                                    <div class="help-block with-errors"></div>
+                                    <label class="form-label">email</label>
+                                    <input type="email" name="email" class="form-control" id="email"
+                                        placeholder="e.g. John@example.com" required data-fs-field>
+                                    <span data-fs-error="email" class="help-block with-errors"></span>
                                 </div>
-                                
+
                                 <div class="form-group col-md-6 mb-4">
-                                    <label class="form-label">phone number</label>
-                                    <input type="text" name="phone" class="form-control" id="phone" placeholder="e.g. + 123 456 8792" required>
-                                    <div class="help-block with-errors"></div>
+                                    <label class="form-label">phone</label>
+                                    <input type="text" name="Τηλεφωνο" class="form-control" id="phone"
+                                        placeholder="e.g. + 123 456 8792" required data-fs-field>
+                                    <span data-fs-error="Τηλεφωνο" class="help-block with-errors"></span>
                                 </div>
 
                                 <div class="form-group col-md-4 mb-4">
                                     <label class="form-label">date</label>
-                                    <input type="date" name="date" class="form-control" id="date" required>
-                                    <div class="help-block with-errors"></div>
+                                    <input type="date" class="form-control" id="date" required data-fs-field>
+                                    <input type="hidden" name="Ημερομηνια" id="date_formatted">
+                                    <span data-fs-error="date" class="help-block with-errors"></span>
                                 </div>
 
                                 <div class="form-group col-md-4 mb-4">
                                     <label class="form-label">time</label>
-                                    <select name="time" class="form-control form-select" id="time" required>
-                                        <option value="" disabled selected>Select time</option>
-                                        <option value="6_30pm">06:30 PM</option>
-                                        <option value="7_00pm">07:00 PM</option>
-                                        <option value="7_30pm">07:30 PM</option>
-                                        <option value="8_00pm">08:00 PM</option>
-                                        <option value="8_30pm">08:30 PM</option>
-                                        <option value="9_00pm">09:00 PM</option>
+                                    <select name="Ωρα" class="form-control form-select" id="time" required data-fs-field>
+                                        <option value="" disabled selected>Επιλογή ώρας</option>
+                                        <option value="18:30">18:30</option>
+                                        <option value="19:00">19:00</option>
+                                        <option value="19:30">19:30</option>
+                                        <option value="20:00">20:00</option>
+                                        <option value="20:30">20:30</option>
+                                        <option value="21:00">21:00</option>
                                     </select>
-                                    <div class="help-block with-errors"></div>
+                                    <span data-fs-error="Ωρα" class="help-block with-errors"></span>
                                 </div>
 
                                 <div class="form-group col-md-4 mb-4">
-                                    <label class="form-label">Number Of Person</label>
-                                    <select name="person" class="form-control form-select" id="person" required>
-                                        <option value="" disabled selected>number of person</option>
-                                        <option value="1_person">1 Person</option>
-                                        <option value="5_person">5 Person</option>
-                                        <option value="10_person">10 Person</option>
-                                        <option value="15_person">15 Person</option>
-                                        <option value="20_person">20 Person</option>
+                                    <label class="form-label">guests</label>
+                                    <select name="Ατομα" class="form-control form-select" id="person" required data-fs-field>
+                                        <option value="" disabled selected>Αριθμός ατόμων</option>
+                                        <option value="1 άτομο">1 άτομο</option>
+                                        <option value="5 άτομα">5 άτομα</option>
+                                        <option value="10 άτομα">10 άτομα</option>
+                                        <option value="15 άτομα">15 άτομα</option>
+                                        <option value="20 άτομα">20 άτομα</option>
                                     </select>
-                                    <div class="help-block with-errors"></div>
+                                    <span data-fs-error="Ατομα" class="help-block with-errors"></span>
                                 </div>
 
                                 <div class="col-lg-12">
                                     <div class="reserve-table-btn">
-                                        <button type="submit" class="btn-default">reserve now</button>
-                                        <div id="msgSubmit" class="h3 hidden"></div>
+                                        <button type="submit" class="btn-default" data-fs-submit-btn>send reservation request</button>
                                     </div>
                                 </div>
                             </div>
@@ -265,19 +341,21 @@
                     <div class="footer-content">
                         <!-- Footer Logo Start -->
                         <div class="footer-logo">
-                            <img src="images/logo.svg" alt="">
+                            <img src="images/Toli_logo.webp" alt="Liana Tavern logo">
                         </div>
                         <!-- Footer Logo End -->
 
+                        <p>Family-run Greek restaurant in Metamorfosi, Halkidiki for seafood, meze, grilled meats, and relaxed dining.</p>
+
                         <!-- Footer Contact Box Start -->
-                        <div class="footer-contact-box">
+                        <div class="footer-contact-box" id="contact">
                             <!-- Footer Contact Item Start -->
                             <div class="footer-contact-item">
                                 <div class="icon-box">
                                     <img src="images/icon-location.svg" alt="">
                                 </div>
                                 <div class="footer-contact-content">
-                                    <p>4517 Washington Ave, Kentucky 39495</p>
+                                    <p>Metamorfosi, Halkidiki 630 78, Greece</p>
                                 </div>
                             </div>
                             <!-- Footer Contact Item End -->
@@ -288,7 +366,7 @@
                                     <img src="images/icon-phone.svg" alt="">
                                 </div>
                                 <div class="footer-contact-content">
-                                    <p><a href="tel:078859632">+01 780 859 632</a></p>
+                                    <p><a href="tel:+302375111346">+30 2375 111346</a></p>
                                 </div>
                             </div>
                             <!-- Footer Contact Item End -->
@@ -306,9 +384,8 @@
                         <!-- Footer Social Icon Start -->
                         <div class="footer-social-icon">
                             <ul>
-                                <li><a href="#"><i class="fa-brands fa-dribbble"></i></a></li>
-                                <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                                <li><a href="menu.html" aria-label="See Liana Tavern menu"><i class="fa-solid fa-utensils"></i></a></li>
+                                <li><a href="https://www.instagram.com/lianatavern/" target="_blank" rel="noopener noreferrer" aria-label="Visit Liana Tavern on Instagram"><i class="fa-brands fa-instagram"></i></a></li>
                             </ul>
                         </div>
                         <!-- Footer Social Icon End -->

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 const files = ['index.html', 'menu.html', 'contact.html'];
-const dir = path.join('d:', 'Projects', 'Toli-Tavern.com Website');
+const dir = path.join('d:', 'Projects', 'Liana-Tavern.com Website');
 
 const srButtonDesktop = `
                             <button type="button" class="lang-btn lang-btn-flag" data-lang="sr" aria-label="Serbian">
@@ -46,7 +46,7 @@ files.forEach(file => {
   // Insert hreflang links in <head>
   content = content.replace(
     /(<link rel="alternate" hreflang="el" href="[^"]+">)/,
-    '<link rel="alternate" hreflang="sr" href="https://toli-tavern.com/">\n    <link rel="alternate" hreflang="ro" href="https://toli-tavern.com/">\n    $1'
+    '<link rel="alternate" hreflang="sr" href="https://liana-tavern.com/">\n    <link rel="alternate" hreflang="ro" href="https://liana-tavern.com/">\n    $1'
   );
 
   // Insert og:locale:alternate

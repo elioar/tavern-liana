@@ -28,11 +28,38 @@
 		});
 	}	
 	
-	/* Slick Menu JS */
+	/* Slick Menu JS - Disabled in favor of custom full screen menu */
+	/*
 	$('#menu').slicknav({
-		label : '',
-		prependTo : '.responsive-menu'
+		label: '',
+		prependTo: '.responsive-menu'
 	});
+	*/
+
+	/* Full Screen Mobile Menu Toggle */
+	var $fsMobileMenu = $('#fsMobileMenu');
+	var $navbarToggleBtn = $('#navbarToggleBtn');
+	var $fsMenuClose = $('#fsMenuClose');
+
+	if ($navbarToggleBtn.length && $fsMobileMenu.length) {
+		$navbarToggleBtn.on('click', function (e) {
+			e.preventDefault();
+			$fsMobileMenu.addClass('active');
+			$body.addClass('no-scroll');
+		});
+
+		$fsMenuClose.on('click', function (e) {
+			e.preventDefault();
+			$fsMobileMenu.removeClass('active');
+			$body.removeClass('no-scroll');
+		});
+
+		// Close menu when clicking navigation links
+		$fsMobileMenu.find('.fs-menu-nav a').on('click', function () {
+			$fsMobileMenu.removeClass('active');
+			$body.removeClass('no-scroll');
+		});
+	}
 
 	if($("a[href='#top']").length){
 		$(document).on("click", "a[href='#top']", function() {

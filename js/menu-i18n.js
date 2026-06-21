@@ -16,8 +16,8 @@
     en: "Greek Restaurant in Metamorfosi, Halkidiki | Liana Tavern",
     el: "Ελληνικό Εστιατόριο στη Μεταμόρφωση, Χαλκιδική | Liana Tavern",
     de: "Griechisches Restaurant in Metamorfosi, Chalkidiki | Liana Tavern",
-    ru: "Греческий ресторан в Ормилии, Халкидики | Liana Tavern",
-    bg: "Гръцки ресторант в Ормилия, Халкидики | Liana Tavern",
+    ru: "Греческий ресторан в Метаморфоси, Халкидики | Liana Tavern",
+    bg: "Гръцки ресторант в Метаморфоси, Халкидики | Liana Tavern",
     sr: "Grčki restoran u Metamorfosiju, Halkidiki | Liana Tavern",
     ro: "Restaurant grecesc în Metamorfosi, Halkidiki | Liana Tavern",
   };
@@ -26,8 +26,8 @@
     en: "Liana Tavern Menu | Metamorfosi, Halkidiki",
     el: "Μενού Liana Tavern | Μεταμόρφωση, Halkidiki",
     de: "Speisekarte Liana Tavern | Metamorfosi, Chalkidiki",
-    ru: "Меню Liana Tavern | Ормилия, Халкидики",
-    bg: "Меню Liana Tavern | Ормилия, Халкидики",
+    ru: "Меню Liana Tavern | Метаморфоси, Халкидики",
+    bg: "Меню Liana Tavern | Метаморфоси, Халкидики",
     sr: "Meni Liana Tavern | Metamorfosi, Halkidiki",
     ro: "Meniu Liana Tavern | Metamorfosi, Halkidiki",
   };
@@ -36,8 +36,8 @@
     en: "Contact Liana Tavern | Metamorfosi, Halkidiki",
     el: "Επικοινωνία Liana Tavern | Μεταμόρφωση, Χαλκιδική",
     de: "Kontakt Liana Tavern | Metamorfosi, Chalkidiki",
-    ru: "Контакты Liana Tavern | Ормилия, Халкидики",
-    bg: "Контакт Liana Tavern | Ормилия, Халкидики",
+    ru: "Контакты Liana Tavern | Метаморфоси, Халкидики",
+    bg: "Контакт Liana Tavern | Метаморфоси, Халкидики",
     sr: "Kontakt Liana Tavern | Metamorfosi, Halkidiki",
     ro: "Contact Liana Tavern | Metamorfosi, Halkidiki",
   };

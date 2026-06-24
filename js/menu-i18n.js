@@ -2458,7 +2458,14 @@
       "Excellent souvlaki, tasty meze, fair prices, and staff who made us feel welcome even on a busy evening. We will definitely come back.": "Εξαιρετικό σουβλάκι, νόστιμοι μεζέδες, δίκαιες τιμές και προσωπικό που μας έκανε να νιώσουμε ευπρόσδεκτοι ακόμα και σε πολύ πολυάσχολη βραδιά. Θα ξαναέρθουμε σίγουρα.",
       "Maria K., Google Review 5/5": "Maria K., Αξιολόγηση Google 5/5",
       "Thomas R., Google Review 5/5": "Thomas R., Αξιολόγηση Google 5/5",
-      "Elena P., Google Review 5/5": "Elena P., Αξιολόγηση Google 5/5"
+      "Elena P., Google Review 5/5": "Elena P., Αξιολόγηση Google 5/5",
+      "Amazing place! The seafood is incredibly fresh, especially the grilled sardines and sea bream. The staff is polite, fast, and the atmosphere under the pine trees is wonderful.": "Καταπληκτικό μέρος! Τα θαλασσινά είναι απίστευτα φρέσκα, ειδικά οι ψητές σαρδέλες και η τσιπούρα. Το προσωπικό είναι ευγενικό, γρήγορο και η ατμόσφαιρα κάτω από τα πεύκα είναι υπέροχη.",
+      "Great Greek food with large portions. The baked feta cheese, tzatziki, and fried calamari were delicious. Fast service even though the restaurant was completely full.": "Υπέροχο ελληνικό φαγητό με μεγάλες μερίδες. Η ψητή φέτα, το τζατζίκι και τα τηγανητά καλαμαράκια ήταν πεντανόστιμα. Γρήγορη εξυπηρέτηση παρόλο που το εστιατόριο ήταν εντελώς γεμάτο.",
+      "Dieter B., Google Review 5/5": "Dieter B., Αξιολόγηση Google 5/5",
+      "Anna S., Google Review 5/5": "Anna S., Αξιολόγηση Google 5/5",
+      "Excellent": "Εξαιρετικά",
+      "based on 1,100+ reviews": "βάσει 1.100+ αξιολογήσεων",
+      "Write a Review": "Γράψτε μια αξιολόγηση"
     },
     de: {
       "See the Menu": "Speisekarte ansehen",
@@ -2652,8 +2659,15 @@
       "Excellent souvlaki, tasty meze, fair prices, and staff who made us feel welcome even on a busy evening. We will definitely come back.": "Souvlaki excelent, meze gustoase, prețuri corecte și un personal care ne-a făcut să ne simțim bineveniți chiar și într-o seară aglomerată. Cu siguranță ne vom întoarce.",
       "Maria K., Google Review 5/5": "Maria K., Recenzie Google 5/5",
       "Thomas R., Google Review 5/5": "Thomas R., Recenzie Google 5/5",
-      "Elena P., Google Review 5/5": "Elena P., Recenzie Google 5/5"
-}
+      "Elena P., Google Review 5/5": "Elena P., Recenzie Google 5/5",
+      "Amazing place! The seafood is incredibly fresh, especially the grilled sardines and sea bream. The staff is polite, fast, and the atmosphere under the pine trees is wonderful.": "Un loc minunat! Fructele de mare sunt incredibil de proaspete, în special sardinele la grătar și dorada. Personalul este politicos, rapid, iar atmosfera de sub pini este minunată.",
+      "Great Greek food with large portions. The baked feta cheese, tzatziki, and fried calamari were delicious. Fast service even though the restaurant was completely full.": "Mâncare grecească excelentă cu porții mari. Feta la cuptor, tzatziki și calamarii prăjiți au fost delicioși. Serviciu rapid chiar dacă restaurantul era complet plin.",
+      "Dieter B., Google Review 5/5": "Dieter B., Recenzie Google 5/5",
+      "Anna S., Google Review 5/5": "Anna S., Recenzie Google 5/5",
+      "Excellent": "Excelent",
+      "based on 1,100+ reviews": "pe baza a peste 1.100 de recenzii",
+      "Write a Review": "Scrie o recenzie"
+    }
   };
 
   var CONTACT_PAGE_MANUAL_TRANSLATIONS = {

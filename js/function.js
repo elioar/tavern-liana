@@ -54,8 +54,8 @@
 			$body.removeClass('no-scroll');
 		});
 
-		// Close menu when clicking navigation links
-		$fsMobileMenu.find('.fs-menu-nav a').on('click', function () {
+		// Close menu when clicking navigation links or hash links
+		$fsMobileMenu.find('.fs-menu-nav a, a[href^="#"]').on('click', function () {
 			$fsMobileMenu.removeClass('active');
 			$body.removeClass('no-scroll');
 		});
@@ -89,14 +89,11 @@
 		const testimonial_slider = new Swiper('.testimonial-slider .swiper', {
 			slidesPerView : 1,
 			speed: 1000,
-			spaceBetween: 30,
+			spaceBetween: 24,
 			loop: true,
 			autoplay: {
-				delay: 3000,
-			},
-			pagination: {
-				el: '.swiper-pagination',
-				clickable: true,
+				delay: 5000,
+				disableOnInteraction: false,
 			},
 			navigation: {
 				nextEl: '.testimonial-btn-next',
@@ -106,8 +103,8 @@
 				768:{
 				  	slidesPerView: 1,
 				},
-				991:{
-				  	slidesPerView: 1,
+				992:{
+				  	slidesPerView: 2,
 				}
 			}
 		});

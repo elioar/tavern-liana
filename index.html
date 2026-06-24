@@ -4,13 +4,14 @@
 <head>
     <!-- Meta -->
     <meta charset="utf-8">
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-VND1YBSWH7"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Q2RY2BLX60"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-        gtag('config', 'G-VND1YBSWH7');
+
+        gtag('config', 'G-Q2RY2BLX60');
     </script>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
@@ -125,7 +126,7 @@
     }
     </script>
     <!-- Favicon Icon -->
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.png">
+    <link rel="shortcut icon" type="image/x-icon" href="images/loader.png">
     <!-- Google Fonts Css-->
     <link rel="preconnect" href="https://fonts.googleapis.com/">
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
@@ -147,94 +148,14 @@
     <!-- Mouse Cursor Css File -->
     <link rel="stylesheet" href="css/mousecursor.css">
     <!-- Main Custom Css -->
-    <link href="css/custom.css?v=3" rel="stylesheet" media="screen">
+    <link href="css/custom.css?v=5" rel="stylesheet" media="screen">
 
     <style>
         html[lang="el"] {
             --default-font: "Noto Sans", "Hanken Grotesk", sans-serif;
         }
 
-        .language-switcher {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            margin-left: 14px;
-        }
 
-        .mobile-language-switcher {
-            display: none;
-            align-items: center;
-            gap: 8px;
-            margin-left: auto;
-            margin-right: 12px;
-            padding: 0;
-            border: none;
-            background: transparent;
-            box-shadow: none;
-            backdrop-filter: none;
-        }
-
-        .lang-btn {
-            border: none;
-            background: transparent;
-            padding: 0;
-            line-height: 1;
-            cursor: pointer;
-            transition: all 0.25s ease;
-        }
-
-        .lang-btn-flag {
-            width: 38px;
-            height: 38px;
-            min-width: 38px;
-            min-height: 38px;
-            padding: 0;
-            line-height: 1;
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid rgba(255, 255, 255, 0.28);
-            background: rgba(255, 255, 255, 0.08);
-            opacity: 1;
-            transform: translateY(0);
-            transition: all 0.25s ease;
-            border-radius: 50%;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-        }
-
-        .lang-btn-flag:hover {
-            opacity: 1;
-            transform: translateY(-1px);
-            border-color: rgba(255, 255, 255, 0.44);
-            background: rgba(255, 255, 255, 0.14);
-        }
-
-        .lang-btn-flag.active {
-            opacity: 1;
-            border-color: rgba(255, 255, 255, 0.9);
-            background: rgba(255, 255, 255, 0.2);
-            box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.14), 0 6px 14px rgba(0, 0, 0, 0.3);
-        }
-
-        .flag-icon {
-            width: 24px;
-            height: 24px;
-            border-radius: 50%;
-            clip-path: circle(50% at 50% 50%);
-            box-shadow: none;
-            display: block;
-        }
-
-        @media (max-width: 991px) {
-            .language-switcher {
-                display: none;
-            }
-
-            .mobile-language-switcher {
-                display: inline-flex;
-                margin-right: 8px;
-            }
-        }
 
         @media (max-width: 991px),
         (pointer: coarse) {
@@ -295,66 +216,7 @@
             }
         }
 
-        /* Mobile language dropdown */
-        .mobile-language-switcher {
-            position: relative;
-        }
 
-        .lang-mobile-trigger {
-            width: 38px;
-            height: 38px;
-            min-width: 38px;
-            border-radius: 50%;
-            border: 1px solid rgba(255, 255, 255, 0.28);
-            background: rgba(255, 255, 255, 0.08);
-            color: #ffffff;
-            display: inline-flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            gap: 1px;
-            cursor: pointer;
-            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
-            transition: border-color 0.25s ease, background 0.25s ease;
-        }
-
-        .lang-mobile-trigger i {
-            font-size: 13px;
-            line-height: 1;
-        }
-
-        .lang-mobile-trigger__code {
-            font-size: 7.5px;
-            font-weight: 700;
-            letter-spacing: 0.4px;
-            line-height: 1;
-            text-transform: uppercase;
-        }
-
-        .lang-mobile-trigger:hover,
-        .mobile-language-switcher.lang-open .lang-mobile-trigger {
-            border-color: rgba(255, 255, 255, 0.5);
-            background: rgba(255, 255, 255, 0.16);
-        }
-
-        .lang-mobile-panel {
-            display: none;
-            position: absolute;
-            top: calc(100% + 8px);
-            right: 0;
-            flex-direction: row;
-            gap: 6px;
-            background: rgba(13, 18, 15, 0.97);
-            border: 1px solid rgba(255, 255, 255, 0.14);
-            border-radius: 14px;
-            padding: 10px;
-            z-index: 10001;
-            box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45);
-        }
-
-        .mobile-language-switcher.lang-open .lang-mobile-panel {
-            display: flex;
-        }
 
         .reserve-form-success {
             display: none;
@@ -422,87 +284,100 @@
                         <div class="header-btn">
                             <a href="menu.html" class="btn-default">See the Menu</a>
                         </div>
-                        <div class="language-switcher" aria-label="Language switcher">
-                            <button type="button" class="lang-btn lang-btn-flag active" data-lang="en"
-                                aria-label="English">
-                                <svg class="flag-icon" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="60" height="30" fill="#012169"></rect>
-                                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path>
-                                    <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3.5"></path>
-                                    <rect x="24" width="12" height="30" fill="#fff"></rect>
-                                    <rect y="9" width="60" height="12" fill="#fff"></rect>
-                                    <rect x="26" width="8" height="30" fill="#C8102E"></rect>
-                                    <rect y="11" width="60" height="8" fill="#C8102E"></rect>
-                                </svg>
+                        <div class="lang-dropdown language-switcher" aria-label="Language switcher">
+                            <button type="button" class="lang-dropdown-trigger" aria-label="Select language"
+                                aria-expanded="false">
+                                <i class="fa-solid fa-globe"></i>
+                                <span class="lang-dropdown-trigger__code">EN</span>
+                                <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
                             </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="de" aria-label="German">
-                                <svg class="flag-icon" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="5" height="1" y="0" fill="#000000"></rect>
-                                    <rect width="5" height="1" y="1" fill="#DD0000"></rect>
-                                    <rect width="5" height="1" y="2" fill="#FFCE00"></rect>
-                                </svg>
-                            </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ru" aria-label="Russian">
-                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
-                                    <rect width="3" height="0.6667" y="0.6667" fill="#0039A6"></rect>
-                                    <rect width="3" height="0.6667" y="1.3333" fill="#D52B1E"></rect>
-                                </svg>
-                            </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="bg" aria-label="Bulgarian">
-                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
-                                    <rect width="3" height="0.6667" y="0.6667" fill="#00966E"></rect>
-                                    <rect width="3" height="0.6667" y="1.3333" fill="#D62612"></rect>
-                                </svg>
-                            </button>
-
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="sr" aria-label="Serbian">
-                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="3" height="0.6667" y="0" fill="#C6363C"></rect>
-                                    <rect width="3" height="0.6667" y="0.6667" fill="#0C4076"></rect>
-                                    <rect width="3" height="0.6667" y="1.3333" fill="#FFFFFF"></rect>
-                                </svg>
-                            </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ro" aria-label="Romanian">
-                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="1" height="2" x="0" fill="#002B7F"></rect>
-                                    <rect width="1" height="2" x="1" fill="#FCD116"></rect>
-                                    <rect width="1" height="2" x="2" fill="#CE1126"></rect>
-                                </svg>
-                            </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="el" aria-label="Greek">
-                                <svg class="flag-icon" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"
-                                    aria-hidden="true" focusable="false">
-                                    <rect width="27" height="18" fill="#0D5EAF"></rect>
-                                    <rect y="2" width="27" height="2" fill="#fff"></rect>
-                                    <rect y="6" width="27" height="2" fill="#fff"></rect>
-                                    <rect y="10" width="27" height="2" fill="#fff"></rect>
-                                    <rect y="14" width="27" height="2" fill="#fff"></rect>
-                                    <rect width="10" height="10" fill="#0D5EAF"></rect>
-                                    <rect x="4" width="2" height="10" fill="#fff"></rect>
-                                    <rect y="4" width="10" height="2" fill="#fff"></rect>
-                                </svg>
-                            </button>
+                            <div class="lang-dropdown-panel">
+                                <button type="button" class="lang-btn lang-dropdown-item active" data-lang="en">
+                                    <svg class="flag-icon" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="60" height="30" fill="#012169"></rect>
+                                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#fff" stroke-width="6"></path>
+                                        <path d="M0,0 L60,30 M60,0 L0,30" stroke="#C8102E" stroke-width="3.5"></path>
+                                        <rect x="24" width="12" height="30" fill="#fff"></rect>
+                                        <rect y="9" width="60" height="12" fill="#fff"></rect>
+                                        <rect x="26" width="8" height="30" fill="#C8102E"></rect>
+                                        <rect y="11" width="60" height="8" fill="#C8102E"></rect>
+                                    </svg>
+                                    <span>English</span>
+                                </button>
+                                <button type="button" class="lang-btn lang-dropdown-item" data-lang="de">
+                                    <svg class="flag-icon" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="5" height="1" y="0" fill="#000000"></rect>
+                                        <rect width="5" height="1" y="1" fill="#DD0000"></rect>
+                                        <rect width="5" height="1" y="2" fill="#FFCE00"></rect>
+                                    </svg>
+                                    <span>Deutsch</span>
+                                </button>
+                                <button type="button" class="lang-btn lang-dropdown-item" data-lang="ru">
+                                    <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
+                                        <rect width="3" height="0.6667" y="0.6667" fill="#0039A6"></rect>
+                                        <rect width="3" height="0.6667" y="1.3333" fill="#D52B1E"></rect>
+                                    </svg>
+                                    <span>Русский</span>
+                                </button>
+                                <button type="button" class="lang-btn lang-dropdown-item" data-lang="bg">
+                                    <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
+                                        <rect width="3" height="0.6667" y="0.6667" fill="#00966E"></rect>
+                                        <rect width="3" height="0.6667" y="1.3333" fill="#D62612"></rect>
+                                    </svg>
+                                    <span>Български</span>
+                                </button>
+                                <button type="button" class="lang-btn lang-dropdown-item" data-lang="sr">
+                                    <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="3" height="0.6667" y="0" fill="#C6363C"></rect>
+                                        <rect width="3" height="0.6667" y="0.6667" fill="#0C4076"></rect>
+                                        <rect width="3" height="0.6667" y="1.3333" fill="#FFFFFF"></rect>
+                                    </svg>
+                                    <span>Srpski</span>
+                                </button>
+                                <button type="button" class="lang-btn lang-dropdown-item" data-lang="ro">
+                                    <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="1" height="2" x="0" fill="#002B7F"></rect>
+                                        <rect width="1" height="2" x="1" fill="#FCD116"></rect>
+                                        <rect width="1" height="2" x="2" fill="#CE1126"></rect>
+                                    </svg>
+                                    <span>Română</span>
+                                </button>
+                                <button type="button" class="lang-btn lang-dropdown-item" data-lang="el">
+                                    <svg class="flag-icon" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"
+                                        aria-hidden="true" focusable="false">
+                                        <rect width="27" height="18" fill="#0D5EAF"></rect>
+                                        <rect y="2" width="27" height="2" fill="#fff"></rect>
+                                        <rect y="6" width="27" height="2" fill="#fff"></rect>
+                                        <rect y="10" width="27" height="2" fill="#fff"></rect>
+                                        <rect y="14" width="27" height="2" fill="#fff"></rect>
+                                        <rect width="10" height="10" fill="#0D5EAF"></rect>
+                                        <rect x="4" width="2" height="10" fill="#fff"></rect>
+                                        <rect y="4" width="10" height="2" fill="#fff"></rect>
+                                    </svg>
+                                    <span>Ελληνικά</span>
+                                </button>
+                            </div>
                         </div>
                         <!-- Header Contact Box End -->
                     </div>
                     <!-- Main Menu End -->
-                    <div class="mobile-language-switcher" aria-label="Mobile language switcher">
-                        <button type="button" class="lang-mobile-trigger" aria-label="Select language"
+                    <div class="lang-dropdown mobile-language-switcher" aria-label="Mobile language switcher">
+                        <button type="button" class="lang-dropdown-trigger" aria-label="Select language"
                             aria-expanded="false">
-                            <i class="fa-solid fa-globe" aria-hidden="true"></i>
-                            <span class="lang-mobile-trigger__code">EN</span>
+                            <i class="fa-solid fa-globe"></i>
+                            <span class="lang-dropdown-trigger__code">EN</span>
+                            <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
                         </button>
-                        <div class="lang-mobile-panel" aria-label="Select language">
-                            <button type="button" class="lang-btn lang-btn-flag active" data-lang="en"
-                                aria-label="English">
+                        <div class="lang-dropdown-panel" aria-label="Select language">
+                            <button type="button" class="lang-btn lang-dropdown-item active" data-lang="en">
                                 <svg class="flag-icon" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"
                                     aria-hidden="true" focusable="false">
                                     <rect width="60" height="30" fill="#012169"></rect>
@@ -513,46 +388,54 @@
                                     <rect x="26" width="8" height="30" fill="#C8102E"></rect>
                                     <rect y="11" width="60" height="8" fill="#C8102E"></rect>
                                 </svg>
+                                <span>English</span>
                             </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="de" aria-label="German">
+                            <button type="button" class="lang-btn lang-dropdown-item" data-lang="de">
                                 <svg class="flag-icon" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice"
                                     aria-hidden="true" focusable="false">
                                     <rect width="5" height="1" y="0" fill="#000000"></rect>
                                     <rect width="5" height="1" y="1" fill="#DD0000"></rect>
                                     <rect width="5" height="1" y="2" fill="#FFCE00"></rect>
                                 </svg>
+                                <span>Deutsch</span>
                             </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ru" aria-label="Russian">
+                            <button type="button" class="lang-btn lang-dropdown-item" data-lang="ru">
                                 <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
                                     aria-hidden="true" focusable="false">
                                     <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
                                     <rect width="3" height="0.6667" y="0.6667" fill="#0039A6"></rect>
                                     <rect width="3" height="0.6667" y="1.3333" fill="#D52B1E"></rect>
                                 </svg>
+                                <span>Русский</span>
                             </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="bg" aria-label="Bulgarian">
+                            <button type="button" class="lang-btn lang-dropdown-item" data-lang="bg">
                                 <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
                                     aria-hidden="true" focusable="false">
                                     <rect width="3" height="0.6667" y="0" fill="#FFFFFF"></rect>
                                     <rect width="3" height="0.6667" y="0.6667" fill="#00966E"></rect>
                                     <rect width="3" height="0.6667" y="1.3333" fill="#D62612"></rect>
                                 </svg>
+                                <span>Български</span>
                             </button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="sr"
-                                aria-label="Serbian"><svg class="flag-icon" viewBox="0 0 3 2"
-                                    preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                            <button type="button" class="lang-btn lang-dropdown-item" data-lang="sr">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
                                     <rect width="3" height="0.6667" y="0" fill="#C6363C"></rect>
                                     <rect width="3" height="0.6667" y="0.6667" fill="#0C4076"></rect>
                                     <rect width="3" height="0.6667" y="1.3333" fill="#FFFFFF"></rect>
-                                </svg></button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="ro"
-                                aria-label="Romanian"><svg class="flag-icon" viewBox="0 0 3 2"
-                                    preserveAspectRatio="xMidYMid slice" aria-hidden="true" focusable="false">
+                                </svg>
+                                <span>Srpski</span>
+                            </button>
+                            <button type="button" class="lang-btn lang-dropdown-item" data-lang="ro">
+                                <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
+                                    aria-hidden="true" focusable="false">
                                     <rect width="1" height="2" x="0" fill="#002B7F"></rect>
                                     <rect width="1" height="2" x="1" fill="#FCD116"></rect>
                                     <rect width="1" height="2" x="2" fill="#CE1126"></rect>
-                                </svg></button>
-                            <button type="button" class="lang-btn lang-btn-flag" data-lang="el" aria-label="Greek">
+                                </svg>
+                                <span>Română</span>
+                            </button>
+                            <button type="button" class="lang-btn lang-dropdown-item" data-lang="el">
                                 <svg class="flag-icon" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"
                                     aria-hidden="true" focusable="false">
                                     <rect width="27" height="18" fill="#0D5EAF"></rect>
@@ -564,9 +447,11 @@
                                     <rect x="4" width="2" height="10" fill="#fff"></rect>
                                     <rect y="4" width="10" height="2" fill="#fff"></rect>
                                 </svg>
+                                <span>Ελληνικά</span>
                             </button>
                         </div>
                     </div>
+
                     <button type="button" class="navbar-toggle-btn" id="navbarToggleBtn" aria-label="Toggle navigation">
                         <span class="navbar-toggle-icon">
                             <span class="icon-bar"></span>
@@ -587,15 +472,15 @@
                         </a>
                         <div class="d-flex align-items-center gap-2">
                             <!-- Mobile Language Switcher (inside Menu) -->
-                            <div class="mobile-language-switcher" aria-label="Mobile language switcher">
-                                <button type="button" class="lang-mobile-trigger" aria-label="Select language"
+                            <div class="lang-dropdown mobile-language-switcher" aria-label="Mobile language switcher">
+                                <button type="button" class="lang-dropdown-trigger" aria-label="Select language"
                                     aria-expanded="false">
-                                    <i class="fa-solid fa-globe" aria-hidden="true"></i>
-                                    <span class="lang-mobile-trigger__code">EN</span>
+                                    <i class="fa-solid fa-globe"></i>
+                                    <span class="lang-dropdown-trigger__code">EN</span>
+                                    <i class="fa-solid fa-chevron-down dropdown-chevron"></i>
                                 </button>
-                                <div class="lang-mobile-panel" aria-label="Select language">
-                                    <button type="button" class="lang-btn lang-btn-flag active" data-lang="en"
-                                        aria-label="English">
+                                <div class="lang-dropdown-panel" aria-label="Select language">
+                                    <button type="button" class="lang-btn lang-dropdown-item active" data-lang="en">
                                         <svg class="flag-icon" viewBox="0 0 60 30" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
                                             <rect width="60" height="30" fill="#012169"></rect>
@@ -607,8 +492,9 @@
                                             <rect x="26" width="8" height="30" fill="#C8102E"></rect>
                                             <rect y="11" width="60" height="8" fill="#C8102E"></rect>
                                         </svg>
+                                        <span>English</span>
                                     </button>
-                                    <button type="button" class="lang-btn lang-btn-flag" data-lang="de"
+                                    <button type="button" class="lang-btn lang-dropdown-item" data-lang="de"
                                         aria-label="German">
                                         <svg class="flag-icon" viewBox="0 0 5 3" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
@@ -616,8 +502,9 @@
                                             <rect width="5" height="1" y="1" fill="#DD0000"></rect>
                                             <rect width="5" height="1" y="2" fill="#FFCE00"></rect>
                                         </svg>
+                                        <span>Deutsch</span>
                                     </button>
-                                    <button type="button" class="lang-btn lang-btn-flag" data-lang="ru"
+                                    <button type="button" class="lang-btn lang-dropdown-item" data-lang="ru"
                                         aria-label="Russian">
                                         <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
@@ -625,8 +512,9 @@
                                             <rect width="3" height="0.6667" y="0.6667" fill="#0039A6"></rect>
                                             <rect width="3" height="0.6667" y="1.3333" fill="#D52B1E"></rect>
                                         </svg>
+                                        <span>Русский</span>
                                     </button>
-                                    <button type="button" class="lang-btn lang-btn-flag" data-lang="bg"
+                                    <button type="button" class="lang-btn lang-dropdown-item" data-lang="bg"
                                         aria-label="Bulgarian">
                                         <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
@@ -634,8 +522,9 @@
                                             <rect width="3" height="0.6667" y="0.6667" fill="#00966E"></rect>
                                             <rect width="3" height="0.6667" y="1.3333" fill="#D62612"></rect>
                                         </svg>
+                                        <span>Български</span>
                                     </button>
-                                    <button type="button" class="lang-btn lang-btn-flag" data-lang="sr"
+                                    <button type="button" class="lang-btn lang-dropdown-item" data-lang="sr"
                                         aria-label="Serbian">
                                         <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
@@ -643,8 +532,9 @@
                                             <rect width="3" height="0.6667" y="0.6667" fill="#0C4076"></rect>
                                             <rect width="3" height="0.6667" y="1.3333" fill="#FFFFFF"></rect>
                                         </svg>
+                                        <span>Srpski</span>
                                     </button>
-                                    <button type="button" class="lang-btn lang-btn-flag" data-lang="ro"
+                                    <button type="button" class="lang-btn lang-dropdown-item" data-lang="ro"
                                         aria-label="Romanian">
                                         <svg class="flag-icon" viewBox="0 0 3 2" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
@@ -652,8 +542,9 @@
                                             <rect width="1" height="2" x="1" fill="#FCD116"></rect>
                                             <rect width="1" height="2" x="2" fill="#CE1126"></rect>
                                         </svg>
+                                        <span>Română</span>
                                     </button>
-                                    <button type="button" class="lang-btn lang-btn-flag" data-lang="el"
+                                    <button type="button" class="lang-btn lang-dropdown-item" data-lang="el"
                                         aria-label="Greek">
                                         <svg class="flag-icon" viewBox="0 0 27 18" preserveAspectRatio="xMidYMid slice"
                                             aria-hidden="true" focusable="false">
@@ -666,6 +557,7 @@
                                             <rect x="4" width="2" height="10" fill="#fff"></rect>
                                             <rect y="4" width="10" height="2" fill="#fff"></rect>
                                         </svg>
+                                        <span>Ελληνικά</span>
                                     </button>
                                 </div>
                             </div>
@@ -708,9 +600,8 @@
                                     target="_blank" rel="noopener" class="fs-btn fs-btn-tripadvisor">
                                     <i class="fa-brands fa-tripadvisor"></i> TripAdvisor
                                 </a>
-                                <a href="https://www.instagram.com/lianatavern/" target="_blank" rel="noopener"
-                                    class="fs-btn fs-btn-instagram">
-                                    <i class="fa-brands fa-instagram"></i> Instagram
+                                <a href="#reservation" class="fs-btn fs-btn-book">
+                                    <i class="fa-solid fa-calendar-days"></i> Book a Table
                                 </a>
                             </div>
                         </div>
@@ -1241,70 +1132,178 @@
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-lg-12">
+                <div class="row align-items-stretch">
+                    <!-- Google Rating Summary Dashboard -->
+                    <div class="col-lg-4 col-md-12 mb-5 mb-lg-0">
+                        <div class="google-rating-dashboard wow fadeInUp">
+                            <div class="platform-logos">
+                                <i class="fa-brands fa-google"></i>
+                                <i class="fa-brands fa-tripadvisor"></i>
+                                <span class="badge-verified">Excellent</span>
+                            </div>
+                            <div class="rating-value">4.8</div>
+                            <div class="rating-stars">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <div class="rating-info">based on 1,100+ reviews</div>
+                            <a href="https://www.google.com/search?client=opera&hs=EgO&sa=X&sca_esv=0f1789b80fec1324&sxsrf=ANbL-n4y6-MWf2iFOFNsLN8EgoiXpkL-dw:1773792123025&q=Liana+Tavern+Reviews&rflfq=1&num=20&stick=H4sIAAAAAAAAAONgkxIxNDAwMDYwNTQ3NDWzNDMwsLQ0NNvAyPiKUSokPydTwS0xNzOnUiEksSy1KE8hKLUsM7W8eBErHkkA1T1F8FUAAAA&rldimm=10003051715696009916&tbm=lcl&hl=en-GR&ved=2ahUKEwimxpfLkqiTAxWOVfEDHWXVBJIQ9fQKegQILRAG&biw=1866&bih=912&dpr=1#lkt=LocalPoiReviews&lrd=0x14a88f2a6034b659:0x8ad1fa8977ec22bc,3,,,,"
+                                target="_blank" rel="noopener noreferrer" class="btn-write-review">Write a Review</a>
+                        </div>
+                    </div>
+
+                    <!-- Reviews Carousel -->
+                    <div class="col-lg-8 col-md-12">
                         <!-- Testimonial Slider Start -->
                         <div class="testimonial-slider">
                             <div class="swiper">
                                 <div class="swiper-wrapper" data-cursor-text="Drag">
-                                    <!-- Testimonial Slide Start â€” replace with your actual Google reviews -->
+                                    <!-- Slide 1 (Maria K.) -->
                                     <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <div class="testimonial-quote">
-                                                <img src="images/testimonial-quote.svg" alt="">
+                                        <div class="testimonial-card">
+                                            <div class="card-header">
+                                                <div class="reviewer-avatar avatar-orange">M</div>
+                                                <div class="reviewer-meta">
+                                                    <h3 class="reviewer-name">Maria K.</h3>
+                                                    <span class="reviewer-status"><i class="fa-brands fa-google"></i>
+                                                        <span>Maria K., Google Review 5/5</span></span>
+                                                </div>
                                             </div>
-                                            <div class="testimonial-content">
+                                            <div class="card-rating">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="review-date">10 months ago</span>
+                                            </div>
+                                            <div class="card-body">
                                                 <p>Beautiful family tavern with generous portions, very friendly
                                                     service, and one of the best grilled octopus dishes we tried in
                                                     Halkidiki.</p>
                                             </div>
-                                            <div class="author-info">
-                                                <div class="author-content">
-                                                    <h3>Maria K., Google Review 5/5</h3>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Testimonial Slide End -->
 
-                                    <!-- Testimonial Slide Start -->
+                                    <!-- Slide 2 (Thomas R.) -->
                                     <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <div class="testimonial-quote">
-                                                <img src="images/testimonial-quote.svg" alt="">
+                                        <div class="testimonial-card">
+                                            <div class="card-header">
+                                                <div class="reviewer-avatar avatar-blue">T</div>
+                                                <div class="reviewer-meta">
+                                                    <h3 class="reviewer-name">Thomas R.</h3>
+                                                    <span class="reviewer-status"><i class="fa-brands fa-google"></i>
+                                                        <span>Thomas R., Google Review 5/5</span></span>
+                                                </div>
                                             </div>
-                                            <div class="testimonial-content">
+                                            <div class="card-rating">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="review-date">1 year ago</span>
+                                            </div>
+                                            <div class="card-body">
                                                 <p>We came for lunch and returned again for dinner. Fresh seafood, clean
                                                     flavors, fast service, and a warm atmosphere for families.</p>
                                             </div>
-                                            <div class="author-info">
-                                                <div class="author-content">
-                                                    <h3>Thomas R., Google Review 5/5</h3>
-                                                </div>
-                                            </div>
                                         </div>
                                     </div>
-                                    <!-- Testimonial Slide End -->
 
-                                    <!-- Testimonial Slide Start -->
+                                    <!-- Slide 3 (Elena P.) -->
                                     <div class="swiper-slide">
-                                        <div class="testimonial-item">
-                                            <div class="testimonial-quote">
-                                                <img src="images/testimonial-quote.svg" alt="">
+                                        <div class="testimonial-card">
+                                            <div class="card-header">
+                                                <div class="reviewer-avatar avatar-green">E</div>
+                                                <div class="reviewer-meta">
+                                                    <h3 class="reviewer-name">Elena P.</h3>
+                                                    <span class="reviewer-status"><i class="fa-brands fa-google"></i>
+                                                        <span>Elena P., Google Review 5/5</span></span>
+                                                </div>
                                             </div>
-                                            <div class="testimonial-content">
+                                            <div class="card-rating">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="review-date">1 year ago</span>
+                                            </div>
+                                            <div class="card-body">
                                                 <p>Excellent souvlaki, tasty meze, fair prices, and staff who made us
                                                     feel welcome even on a busy evening. We will definitely come back.
                                                 </p>
                                             </div>
-                                            <div class="author-info">
-                                                <div class="author-content">
-                                                    <h3>Elena P., Google Review 5/5</h3>
+                                        </div>
+                                    </div>
+
+                                    <!-- Slide 4 (Dieter B.) -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card">
+                                            <div class="card-header">
+                                                <div class="reviewer-avatar avatar-purple">D</div>
+                                                <div class="reviewer-meta">
+                                                    <h3 class="reviewer-name">Dieter B.</h3>
+                                                    <span class="reviewer-status"><i class="fa-brands fa-google"></i>
+                                                        <span>Dieter B., Google Review 5/5</span></span>
                                                 </div>
+                                            </div>
+                                            <div class="card-rating">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="review-date">2 weeks ago</span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Amazing place! The seafood is incredibly fresh, especially the
+                                                    grilled sardines and sea bream. The staff is polite, fast, and the
+                                                    atmosphere under the pine trees is wonderful.</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <!-- Testimonial Slide End -->
+
+                                    <!-- Slide 5 (Anna S.) -->
+                                    <div class="swiper-slide">
+                                        <div class="testimonial-card">
+                                            <div class="card-header">
+                                                <div class="reviewer-avatar avatar-teal">A</div>
+                                                <div class="reviewer-meta">
+                                                    <h3 class="reviewer-name">Anna S.</h3>
+                                                    <span class="reviewer-status"><i class="fa-brands fa-google"></i>
+                                                        <span>Anna S., Google Review 5/5</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="card-rating">
+                                                <div class="stars">
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                    <i class="fa-solid fa-star"></i>
+                                                </div>
+                                                <span class="review-date">3 weeks ago</span>
+                                            </div>
+                                            <div class="card-body">
+                                                <p>Great Greek food with large portions. The baked feta cheese,
+                                                    tzatziki, and fried calamari were delicious. Fast service even
+                                                    though the restaurant was completely full.</p>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div class="testimonial-btn">
                                     <div class="testimonial-btn-prev"></div>
@@ -1555,17 +1554,17 @@
     <script src="js/function.js"></script>
     <script src="js/menu-i18n.js"></script>
     <script>
-        /* Mobile language dropdown */
+        /* Language dropdown toggle */
         (function () {
-            var switchers = document.querySelectorAll('.mobile-language-switcher');
-            switchers.forEach(function (switcher) {
-                var trigger = switcher.querySelector('.lang-mobile-trigger');
-                var codeEl = trigger && trigger.querySelector('.lang-mobile-trigger__code');
-                var panel = switcher.querySelector('.lang-mobile-panel');
+            var dropdowns = document.querySelectorAll('.language-switcher, .mobile-language-switcher');
+            dropdowns.forEach(function (switcher) {
+                var trigger = switcher.querySelector('.lang-dropdown-trigger');
+                var codeEl = trigger && trigger.querySelector('.lang-dropdown-trigger__code');
+                var panel = switcher.querySelector('.lang-dropdown-panel');
                 if (!trigger || !panel) return;
 
                 function syncCode() {
-                    var active = panel.querySelector('.lang-btn-flag.active');
+                    var active = panel.querySelector('.lang-btn.active');
                     if (active && codeEl) {
                         codeEl.textContent = (active.getAttribute('data-lang') || 'en').toUpperCase();
                     }
@@ -1573,6 +1572,14 @@
 
                 trigger.addEventListener('click', function (e) {
                     e.stopPropagation();
+                    // Close other open dropdowns first
+                    dropdowns.forEach(function (other) {
+                        if (other !== switcher) {
+                            other.classList.remove('lang-open');
+                            var otherTrigger = other.querySelector('.lang-dropdown-trigger');
+                            if (otherTrigger) otherTrigger.setAttribute('aria-expanded', 'false');
+                        }
+                    });
                     var open = switcher.classList.toggle('lang-open');
                     trigger.setAttribute('aria-expanded', open ? 'true' : 'false');
                 });

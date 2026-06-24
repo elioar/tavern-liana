@@ -3055,16 +3055,32 @@
         element._menuI18nSplit.revert();
       }
 
+      // Clear any stale GSAP inline styles from previous animations (e.g. from function.js)
+      var children = element.querySelectorAll("*");
+      if (children.length) {
+        gsap.killTweensOf(children);
+        gsap.set(children, { clearProps: "opacity,visibility,transform,x,y" });
+      }
+
       var split = new SplitText(element, { type: "chars, words" });
-      var tween = gsap.from(split.chars, {
+
+      var rect = element.getBoundingClientRect();
+      var alreadyVisible = rect.top < window.innerHeight * 0.85;
+
+      var tweenVars = {
         duration: 1,
         delay: 0.1,
         x: 20,
         autoAlpha: 0,
         stagger: 0.03,
         ease: "power2.out",
-        scrollTrigger: { trigger: element, start: "top 85%" },
-      });
+      };
+
+      if (!alreadyVisible) {
+        tweenVars.scrollTrigger = { trigger: element, start: "top 85%" };
+      }
+
+      var tween = gsap.from(split.chars, tweenVars);
 
       element._menuI18nSplit = split;
       element._menuI18nTween = tween;
@@ -3093,7 +3109,11 @@
       };
     });
 
+    var isFirstApply = true;
+
     function applyLanguage(language) {
+      var shouldRefreshAnims = !isFirstApply;
+      isFirstApply = false;
       var currentLanguage = language === "el" || language === "de" || language === "ru" || language === "bg" || language === "sr" || language === "ro" ? language : "en";
       var textTranslations = TEXT_TRANSLATIONS_BY_LANGUAGE[currentLanguage] || null;
       var placeholderTranslations = PLACEHOLDER_TRANSLATIONS_BY_LANGUAGE[currentLanguage] || null;
@@ -3148,7 +3168,9 @@
       document.documentElement.setAttribute("lang", currentLanguage);
       document.title = TITLE_BY_LANGUAGE[currentLanguage] || TITLE_BY_LANGUAGE.en;
       updateMetaTags(currentLanguage);
-      refreshAnimatedHeadings();
+      if (shouldRefreshAnims) {
+        refreshAnimatedHeadings();
+      }
 
       buttons.forEach(function (button) {
         button.classList.toggle("active", button.getAttribute("data-lang") === currentLanguage);
